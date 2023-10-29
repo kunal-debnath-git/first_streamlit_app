@@ -78,9 +78,9 @@ except URLError as e:
 
 
 def get_fruitvice_data(this_fruit_choice):
-    fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + this_fruit_choice)
-    fruityvice_normalized = pandas.json_normalize(fruityvice_response.json())
-    return fruityvice_normalized
+    fruityvice_response_two = requests.get("https://fruityvice.com/api/fruit/" + this_fruit_choice)
+    fruityvice_normalized_two = pandas.json_normalize(fruityvice_response.json())
+    return fruityvice_normalized_two
 
 streamlit.header("Fruityvice Fruit Advice!...2")
 try:
