@@ -39,7 +39,7 @@ streamlit.dataframe(fruityvice_normalized)
 
 streamlit.header("The Fruit load list component")
 def get_fruit_load_list():
-  with my_cnx.cursor() as mycur:
+  with my_cnx.cursor() as my_cur:
     my_cur.execute("SELECT * from fruit_load_list")
     return my_cur.fetchall()
 
