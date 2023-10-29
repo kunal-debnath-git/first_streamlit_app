@@ -48,7 +48,7 @@ streamlit.header("The Fruit load list component")
 def get_fruit_load_list():
   with my_cnx.cursor() as mycur:
     my_cur.execute("SELECT * from fruit_load_list")
-    return my_data_row = my_cur.fetchall()
+    return my_cur.fetchall()
 
 if streamlit.button('get fruit load list'):
   my_cnx = snowflake.connector.connect(**streamlit.secrets["snowflake"])
