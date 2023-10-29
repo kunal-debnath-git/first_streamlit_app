@@ -44,7 +44,7 @@ streamlit.text(my_data_row)
 
 my_cur.execute("SELECT * from fruit_load_list")
 my_data_row = my_cur.fetchone()
-streamlit.text("the fruit load list containder")
+streamlit.header("the fruit load list containder")
 streamlit.text(my_data_row)
 
 
